@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "slopeconnector_surface_refine",
+  "version": "${version}",
+  "name": "Slope Connector Independent Dimensions and Native Endpoints",
+  "description": "Splits left/right width from up/down thickness, keeps endpoint blocks under native rendering for adjacent-block texture continuity, aligns both arc seams to integer texture phases, and synchronizes vanilla/Conquest connected endpoint states.",
+  "authors": [
+    "OpenAI"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.slopeconnector.surface.SurfaceRefineMod"
+    ],
+    "client": [
+      "com.slopeconnector.surface.client.SurfaceRefineClient"
+    ]
+  },
+  "mixins": [
+    "slopeconnector_surface_refine.mixins.json"
+  ],
+  "jars": [
+    {
+      "file": "META-INF/jars/slopeconnector-0.9.19.jar"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "slopeconnector_connected": "=0.9.19-uv-unwrap-smooth-endpoint"
+  },
+  "suggests": {
+    "conquest": ">=1.5.2"
+  }
+}

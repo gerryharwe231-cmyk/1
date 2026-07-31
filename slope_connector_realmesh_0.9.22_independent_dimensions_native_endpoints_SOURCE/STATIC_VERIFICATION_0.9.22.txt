@@ -1,0 +1,17 @@
+0.9.22 static verification
+
+PASS: existing geometry and continuous UV tests
+PASS: global curvilinear atlas tests
+PASS: both visible endpoint planes resolve to integer S texture coordinates
+PASS: left/right width remains independent from radial up/down scaling
+PASS: up/down scaling modifies prism geometry before collision and auto-trim processing
+PASS: endpoint SurfaceQuad rendering removed
+PASS: endpoint bridge overlap clipped from visible rendering
+PASS: empty endpoint-overlay-only holders removed after generation
+PASS: original and Conquest-style horizontal connection properties supported
+PASS: connected endpoint state forced at generation and neighbor updates
+PASS: supported-block reflection results cached by block type
+PASS: G panel keeps original width row as left/right and adds separate up/down row
+PASS: JSON and Java delimiter checks
+PASS: bundled API and runtime-nested Mixin target checks
+PASS: parser-level Java syntax check
